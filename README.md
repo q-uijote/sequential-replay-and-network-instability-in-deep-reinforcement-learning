@@ -4,7 +4,12 @@
 
 A torch version of the class 'SFMA_DQNAgent' used in the experiments of https://github.com/sencheng/EM_Spatial_Learning.git (**Modeling the function of episodic memory in spatial learning (Zeng, X., Diekmann, N., Wiskott, L., Cheng, S., 2023)**) is implemented in deep_sfma_torch.py.
 
-Similarly, sequential_replay_1_torch.py is ment to reproduce the results of the respective 'sequential_replay_1.py' program in the directory mentioned above.
+sequential_replay_1_torch.py is the main file for running the experiments
+
+optimal_Q.py is a module that is used for calculating Q*
+
+plot_CI.py is used for plotting experimental results
+
 
 ## Prerequisites
 
@@ -16,7 +21,7 @@ The three directories mentioned in installation steps 1-3 are placed in the same
 
 ### 1. Clone the repository
 ```
-
+git clone https://github.com/q-uijote/sequential-replay-and-network-instability-in-deep-reinforcement-learning.git
 ```
 ### 2. Clone the original EM_Spatial_Learning directory
 ```
@@ -40,4 +45,3 @@ export PYTHONPATH=/path/to/your/repo/CoBeL_RL_nd_new_features:/path/to/your/repo
 python sequential_replay_1_torch.py
 ```
 The data will be stored in data/sequential_replay_1_torch
-
